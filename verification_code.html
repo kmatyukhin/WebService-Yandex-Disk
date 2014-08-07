@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript">//<!--
+  function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+  }
+  window.onload=function(){
+    document.getElementById("confirm_code").innerHTML = getURLParameter('code');
+  };
+//-->
+</script>
+</head>
+<body>
+<p id="confirm_code"></p>
+</body>
+</html>
